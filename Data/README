@@ -1,0 +1,50 @@
+*** About ***
+
+The data available in this repository has been obtained using the Keystone II system on chip for memory interference analysis.
+
+
+*** Structure ***
+
+The folders structure is the following:
+	- Critical ARM: Critical task being executed 
+	- Critical and non-critical ARM: Critical and ARM non-critical task being executed 
+	- Critical ARM and non-critical DSPs: Critical and DSPs non-critical task being executed 
+
+
+***  Critical ARM  ***
+
+Inside this folder we find other three whose name indicate the stress level of the critical task unbder analysis. Each of them contain subfolders that indicates the number of measurement done for a specific measurement condition. This condition is given by the name of the data file:
+	+ "exp1" is the tage given for the Critical ARM study case
+	+ "safety(number)" indicates the stress level of the task
+	+ "event name(e.g. cycle)" indicates the event under analysis
+	+ "number" indicates the matrix size in use, i.e. an indicator of the memory in use
+	+ "number" indicates the number of measurements for the specific runtime condition
+
+
+***  Critical and non-critical ARM  ***
+
+Inside this folder we find other three whose name indicate the stress level of the critical task unbder analysis. Each of them contain subfolders that indicates the number of measurement done for a specific measurement condition. This condition is given by the name of the data file:
+	+ "exp2" is the tage given for the Critical and non-critical ARM
+	+ "safety(number)" indicates the stress level of the task
+	+ "event name(e.g. cycle)" indicates the event under analysis
+	+ "number" indicates the matrix size of the critical task in use, i.e. an indicator of the memory in use
+	+ "number" indicates the number of measurements for the specific runtime condition
+	+ "nonSafety" indicates that the next values describes the non-critical tasks
+	+ "number" indicates the matrix size of the non-critical task in use, i.e. an indicator of the memory in use
+
+
+***  Critical ARM and non-critical DSPs  ***
+
+Inside this folder we find other three whose name indicate the stress level of the critical task unbder analysis. Each of them contain subfolders that indicates whether the DSPs' caches are being used or not. Inside them we find the last folders whose name indicates the DSPs matrix size. The runtime condition is given by the name of the data file found inside these previous folders:
+	+ "exp1" indicates that only the critical ARM is being used
+	+ "safety(number)" indicates the stress level of the task
+	+ "event name(e.g. cycle)" indicates the event under analysis
+	+ "number" indicates the matrix size of the critical task in use, i.e. an indicator of the memory in use
+	+ "number" indicates the number of measurements for the specific runtime condition
+	+ "DSP" indicates that the next value describes the number of DSPs, with non-critical tasks running, being used 
+	+ "number" indicates the DSPs being used concurrently
+
+
+
+
+
